@@ -52,10 +52,10 @@ jobs:
       - name: Running tests (with coverage)
         run: poetry run pytest --cov-report=xml --cov=gns3fy tests
  
-      # Codecov coverage
-      - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v2
-        with:
-          fail_ci_if_error: true
-      #- name: Upload to codecov
-      #  run: poetry run pytest --cov-report=xml --cov=gns3fy tests/
+      # # Codecov coverage
+      # - name: Upload coverage to Codecov
+      #   uses: codecov/codecov-action@v2
+      #   with:
+      #     fail_ci_if_error: true
+      # #- name: Upload to codecov
+      # #  run: poetry run pytest --cov-report=xml --cov=gns3fy tests/
