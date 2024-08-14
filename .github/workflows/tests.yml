@@ -59,3 +59,9 @@ jobs:
       #     fail_ci_if_error: true
       # #- name: Upload to codecov
       # #  run: poetry run pytest --cov-report=xml --cov=gns3fy tests/
+
+      - uses: actions/checkout@main
+      - uses: codecov/codecov-action@v4
+        with:
+          fail_ci_if_error: true
+          token: ${{ secrets.CODECOV_TOKEN }}
